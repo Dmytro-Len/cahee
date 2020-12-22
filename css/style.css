@@ -1,3 +1,8 @@
+/* @font-face {
+  font-family: url(../fonts/fa-solid-900.woff2) format('woff2');
+  font-weight: 900;
+} */
+
 body {
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
@@ -78,7 +83,11 @@ body {
 }
 
 /* Section style end */
-
+.section-services {
+  height: 790px;
+  background-color: #70bfff;
+  padding: 100px auto 163px;
+}
 
 /* Button style start */
 .button {
@@ -133,6 +142,62 @@ body {
 }
 
 /* Header style end */
+/* Section Services starts here */
+.btn-wrapper {
+  margin-top: 130px;
+}
+.service-btn {
+  width: 400px;
+  height: 100px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  box-shadow: 0px 4px 10px 0 rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+.service-btn__text {
+  flex-basis: 300px;
+  text-align: center;
+  margin-bottom: 0;
+
+}
+.service-btn__icon {
+  flex-basis: 100px;
+  text-align: center;
+}
+.divider {
+  height: 100%;
+  width: 1px;
+  background-color:  #9d9d9d;
+
+}
+.service-btn__title {
+  margin-bottom: 0;
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.35;
+  color: #262626;
+}
+.icon-lg {
+  font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Section Services ends here */
 /*Blog section start here */
 .section-blog {
   padding: 100px 0 120px;
