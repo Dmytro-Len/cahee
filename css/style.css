@@ -84,6 +84,7 @@ body {
 
 /* Section style end */
 .section-services {
+  position: relative;
   height: 790px;
   background-color: #70bfff;
   padding: 100px auto 163px;
@@ -191,10 +192,13 @@ body {
 .service-pic {
   margin-top: 100px;
 }
+.title-service {
+  position: relative;
+}
 .title-position {
   position:absolute;
-  top: 364px;
-  left: 880px;
+  top: 305px;
+  left: -64px;
 }
 
 /* Section Services ends here */
@@ -333,8 +337,6 @@ try to change font opacity
   font-weight: 300;
   line-height: 1.47;
   text-align: center;
-}
-.section__center-description {
   color: #262626;
 }
 /* Form */
@@ -372,6 +374,7 @@ textarea::placeholder {
 }
 input[type=text],
 input[type=email],
+input[type=tel],
 textarea {
   padding-left: 20px;
   outline: none;
@@ -390,11 +393,9 @@ textarea:focus {
 }
 /* Focus state */
 input:focus::placeholder{
-  content: "";
   color: transparent;
 }
 textarea:focus::placeholder{
-  content: "";
   color: transparent;
 }
 /* footer */

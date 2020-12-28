@@ -11,6 +11,8 @@
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <link rel="stylesheet" href="css/all.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/section-gallery.css">
+  <link rel="stylesheet" href="css/section-subscribe.css">
 </head>
 
 <body>
@@ -25,10 +27,10 @@
             <nav class="nav">
               <a href="#" class="nav__link">HOME</a>
               <a href="#about" class="nav__link">ABOUT</a>
-              <a href="#" class="nav__link">SERVICES</a>
-              <a href="#" class="nav__link">GALLERY</a>
+              <a href="#services" class="nav__link">SERVICES</a>
+              <a href="#gallery" class="nav__link">GALLERY</a>
               <a href="#blog" class="nav__link">BLOG</a>
-              <a href="#" class="nav__link">CONTACT</a>
+              <a href="#contact" class="nav__link">CONTACT</a>
             </nav>
           </div>
         </div>
@@ -69,7 +71,7 @@
         </div>
       </div>
     </section>
-    <section class="section section-services">
+    <section class="section section-services" id='services'>
       <div class="container">
         <div class="row">
           <div class="col-6">
@@ -112,14 +114,48 @@
               </div>
             </div>
           </div>
-          <div class="col-6">
+          <div class="col-6 title-service">
             <img class="service-pic" src="images/tomato.png" alt="tomato">
             <h4 class="title title-position">Our Services</h4>
           </div>
         </div>
       </div>
     </section>
-    <section class="section-blog">
+<section class="section-gallery" id="gallery">
+  <div class="container">
+    <h2 class="title section-gallery__title">Gallery</h2>
+    <p class="section__center-description section__center-description--dark">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et<br> dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation<br> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div class="section-gallery__picture-box">
+      <div class="inner">
+        <img src="images/gal-1.png" alt="gal-1">
+      </div>
+      <div class="inner">
+        <img src="images/gal-2.png" alt="gal-2">
+        <img src="images/gal-3.png" alt="gal-3">
+      </div>
+    </div>
+    <div class="section-gallery__picture-box--bottom">
+      <div class="inner inner-row">
+        <img src="images/gal-4.png" alt="gal-4">
+      </div>
+      <div class="inner inner-row">
+        <img src="images/gal-5.png" alt="gal-5">
+      </div>
+    </div>
+    <button type="button" class="btn btn--gallery">view more</button>
+  </div>
+</section>
+<section class="section-subscribe">
+  <div class="container">
+    <h2 class="section-subscribe__title">subscribe to us</h2>
+    <p class="section__center-description section-subscribe__subtitle">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+    <form action="#" method="GET">
+      <input class="subscribe" required type="mail" minlength="8" maxlength="30" placeholder="Your email address.">
+      <button class="button btn-subscribe">subscribe</button>
+    </form>
+  </div>
+</section>
+    <section class="section-blog" id="blog">
       <div class="container">
         <h2 class="section-blog__title">Blog</h2>
         <p class="section-blog__subtitle">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -167,7 +203,7 @@
         <button type="button" class="btn">view more</button>
       </div>
     </section>
-    <section class="section section--contact">
+    <section class="section section--contact" id="contact">
       <div class="container">
         <h2 class="section__title--black title">Contact</h2>
         <p class="section__center-description section__center-description--dark">For new projects, ideas, business or
@@ -192,7 +228,7 @@
                 <h5 class="contact__title">address</h5>
                 <p class="contact__description">123 City name, Street, City, Country</p>
                 <h5 class="contact__title">email</h5>
-                <p class="contact__description">123 City name, Street, City, Country</p>
+                <p class="contact__description">cahee@domain.com</p>
                 <h5 class="contact__title">phone</h5>
                 <p class="contact__description">+012 345 6789</p>
               </div>
